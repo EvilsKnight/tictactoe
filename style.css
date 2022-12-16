@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    height: 100vh;
+    /* background: linear-gradient(135deg,#8052ec,#da87fb); */
+    background: url("starry night image.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.wrapper{
+    position:absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+#turn{
+    /* border: 1px solid red; */
+    border-radius: 2vmin;  
+    text-align: center;
+   margin-bottom: 1vmin;
+    font-size: 20px;
+    font-weight: bolder;
+    height:9vmin;
+    width: 70vmin;
+    background: #4c22cb;
+    color: #fff;
+    opacity: 0.7;
+}
+.container{
+    width: 70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;border-radius: 8px;
+    background: #0a0027;
+    box-shadow:0px 0px 15px rgb(0,0,0,0.4) ;
+}
+.button-option{
+    background:#ffff;
+    height: 22vmin;
+    width: 22vmin;
+    border: none;
+    /* border-radius: 8px; */
+    font-size: 12vmin;
+    color: #d161ff;
+    box-shadow:0px 0px 15px rgb(0,0,0,0.4) ;
+    cursor: pointer;
+    opacity: 0.9;
+    
+}
+
+#restart{
+    font-size: 1.3em;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #0a0027;
+    color: #ffff;
+    border: none;
+    position: relative;
+    margin: 1em auto 0 auto;
+    display: block;
+}
+
+.popup{
+    background: linear-gradient(135deg,#8052ec,#d161ff);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 12vmin;
+}
+#new-game{
+    font-size: 0.6em;
+    padding: 0.5em 1em;
+    background-color: #0a0027;
+    color: #fff;
+    border-radius: 0.2em;
+    border: none;
+}
+
+#message{
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+
+}
+.popup.hide {
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+
+    body{
+        height: 100vh;
+        /* background: linear-gradient(135deg,#8052ec,#da87fb); */
+        background: url("phone.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
+    
