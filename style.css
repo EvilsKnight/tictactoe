@@ -12,7 +12,7 @@ html{
 body{
     height: 100vh;
     /* background: linear-gradient(135deg,#8052ec,#da87fb); */
-    background: url("starry night image.png");
+    background: url("bg.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }
